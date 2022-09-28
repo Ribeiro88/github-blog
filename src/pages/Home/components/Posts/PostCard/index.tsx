@@ -1,8 +1,8 @@
-import { IssuesProps } from "../..";
-import { formatDate } from "../../../../utils/formatDate";
+import { PostProps } from "..";
+import { formatDate } from "../../../../../utils/formatDate";
 import { PostCardContainer, PostCardContent, PostCardHeader, PostCardHeaderDate, PostCardHeaderTitle } from "./styles";
 
-export function PostCard({ number, title, body, created_at }: IssuesProps) {
+export function PostCard({ number, title, body, created_at }: PostProps) {
   const preview = body.split(" ", 20).join(" ").concat("...");
   const postDate = formatDate(created_at);
 

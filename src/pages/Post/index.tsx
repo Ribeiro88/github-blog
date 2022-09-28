@@ -26,7 +26,7 @@ export function Post() {
   const [postData, setPostData] = useState<PostProps[]>([]);
 
   const fetchPostData =  useCallback(async () => {
-    const response = await api.get(`/repos/MatheusAndrade23/GitHub_Blog-Ignite/issues/${postNumber}`);
+    const response = await api.get(`/repos/Ribeiro88/github-blog/issues/${postNumber}`);
 
     setPostData([response.data])
   }, []);

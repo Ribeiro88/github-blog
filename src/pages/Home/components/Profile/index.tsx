@@ -32,6 +32,17 @@ export function Profile(){
     fetchUserData()
   }, [])
 
+  // const fetchUserData = useCallback(async () => {
+  //   const response = await api.get('user')
+
+  //   setUsers(response.data);
+  // }, [])
+
+  // useEffect(() => {
+  //   fetchUserData()
+  // }, [])
+
+
   return (
     <ProfileContainer>
       {users.map(user => {

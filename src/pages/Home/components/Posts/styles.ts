@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const PostsContainer = styled.section`
+  width: 100%;
+  margin: 0 auto 3rem;
+`;
+
 export const SearchFormContainer = styled.form`
   width: 100%;
   margin-block: 4.5rem 3rem;
@@ -40,4 +45,11 @@ export const SearchFormHeaderTitle = styled.h4`
 export const SearchFormHeaderPublications = styled.p`
   color: ${(props) => props.theme["base-span"]};
   font-size: 0.875rem;
+`
+
+export const PostsListContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 `;
+

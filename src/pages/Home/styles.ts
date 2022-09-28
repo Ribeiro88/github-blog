@@ -8,9 +8,3 @@ export const HomeContainer = styled.main`
   
 `
 
-export const PostsContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-`;
-
