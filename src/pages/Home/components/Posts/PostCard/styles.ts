@@ -14,6 +14,10 @@ export const PostCardContainer = styled.a`
     border-color: ${(props) => props.theme["base-label"]};
   }
   
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
 `;
 
 export const PostCardHeader = styled.header`

@@ -14,6 +14,14 @@ export const ProfileContainer = styled.section`
   border-radius: 10px;
   margin-top: -7rem;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+  }
+
 `
 
 export const Avatar = styled.img`

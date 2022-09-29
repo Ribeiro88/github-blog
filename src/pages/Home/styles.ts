@@ -5,6 +5,10 @@ export const HomeContainer = styled.main`
   max-width: 850px;
   margin: 4rem auto;
   padding: 0 1.5rem;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
   
 `
 

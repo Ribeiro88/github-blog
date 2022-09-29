@@ -14,6 +14,10 @@ export const PostHeader = styled.header`
   border-radius: 10px;
   background-color: ${(props) => props.theme["base-profile"]};
   box-shadow: 0 2px 28px rgb(0 0 0 / 0.2);
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 export const PostHeaderLinks = styled.div`
@@ -55,6 +59,10 @@ export const PostFooter = styled.footer`
   gap: 2rem;
   flex-wrap: wrap;
 
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+
 `;
 
 export const PostFooterInfoBox = styled.div`
@@ -62,6 +70,10 @@ export const PostFooterInfoBox = styled.div`
   align-items: center;
   gap: 0.5rem;
   color: ${(props) => props.theme["base-label"]};
+
+  @media (max-width: 768px) {
+    gap: 0.3rem;
+  }
 `;
 
 export const PostFooterInfoBoxText = styled.span`
@@ -97,5 +109,9 @@ export const PostContent = styled.div`
   img {
     max-width: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2.5rem 1rem;
   }
 `;
